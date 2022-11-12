@@ -1,4 +1,5 @@
-﻿// Вписать условие задачи
+﻿// С клавиатуры вводятся два вещественных числа. Проверять является ли одно из них квадратом второго
+
 System.Console.WriteLine("Введите число num1:");
 double num1 = Convert.ToDouble(Console.ReadLine());
 System.Console.WriteLine("Введите число num2:");

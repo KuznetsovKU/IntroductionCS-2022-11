@@ -2,7 +2,8 @@
 // Console.WriteLine("Hello, World!"); 
 #endregion
 
-// Ввести условие задачи
+// С клавиатуры вводится целое число. Вывести квадрат числа
+
 int a;
 Console.Write("Введите число ");
 string num = Console.ReadLine();
