@@ -7,6 +7,13 @@ int i = -num;
 
 while (i <= num)
 {
-    System.Console.Write(i);
+    System.Console.Write($"{i} ");
     i++;
+}
+
+System.Console.WriteLine();
+
+for (int j = -num; j <= num; j++)
+{
+    System.Console.Write($"{j} ");
 }
