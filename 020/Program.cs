@@ -16,7 +16,7 @@ if(x > 0 && y < 0) System.Console.WriteLine("Координата находит
 #endregion
 */
 
-
+/*
 #region second case
 
 if (x < 0)
@@ -27,5 +27,22 @@ else
 {
     if (y > 0) System.Console.WriteLine("Координата находится в I четверти"); else System.Console.WriteLine("Координата находится в IV четверти");
 }
+
+#endregion
+*/
+
+#region With method
+
+int Find_Quarter (int arg1, int arg2)
+{
+    int quarter = 0;
+    if (arg1 > 0 && arg2 > 0) quarter = 1;
+    if (arg1 < 0 && arg2 > 0) quarter = 2;
+    if (arg1 < 0 && arg2 < 0) quarter = 3;
+    if (arg1 > 0 && arg2 < 0) quarter = 4;
+    return quarter;
+}
+
+System.Console.WriteLine($"Введенные координаты находятся в {Find_Quarter(x, y)}-й четверти");
 
 #endregion
