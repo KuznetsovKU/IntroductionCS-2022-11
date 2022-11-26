@@ -7,9 +7,10 @@ int[] Fill_Array(int size, int min = -100, int max = 100)
     return filled_array;
 }
 
-void PrintArray(int[] array_to_print)
+void PrintArray(int[] array_to_print, int tab = 5)  // tab - передача аргумента, определяющего табуляцию между значениями при выводе в консоль
 {
-    foreach (int value in array_to_print) System.Console.Write($"{value, 5}");
+    string format_string = "{0, "+tab+"}";          // итоговоре значение табуляции
+    foreach (int value in array_to_print) System.Console.Write(format_string, value);  // передача значения табуляции для вывода в консоль
     System.Console.WriteLine();
 }
 
