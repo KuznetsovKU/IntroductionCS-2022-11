@@ -11,7 +11,7 @@ int Binary_Search(int[] input_array, int searched_value)  // алгоритм б
         index = ls + (rs - ls) /2;    // не забываем менять центральную позицию в границах поиска на каждой итерации
     }
     if (input_array[index] != searched_value) 
-        return -1;  // почему-то не выводит -1 (не найдено)
+        return -1;
     else 
         return index;
 }
@@ -49,7 +49,7 @@ Print_Array(array_BA_012);
 array_BA_012[4] = 3;
 Array.Sort(array_BA_012);
 Print_Array(array_BA_012);
-int search_val = 3;
+int search_val = -2;
 System.Console.WriteLine(Binary_Search(array_BA_012, search_val));
 
 /*
