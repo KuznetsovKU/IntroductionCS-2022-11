@@ -21,3 +21,22 @@ void SummDigitsInText(string inputString)
 }
 
 SummDigitsInText("e130");
+
+void SummDigitsInText_2 (string inputString)  // такой метод задействует меньше ресурсов, т.к. работать будет с int, а не с char или string
+{
+    int summ = 0;
+    int number;
+    bool isNumber = int.TryParse(inputString, out number);
+    if(isNumber)
+    {
+        while(number != 0)
+        {
+            summ += Math.Abs(number) % 10;
+            number /= 10;
+        }
+        System.Console.WriteLine($"Сумма цифр введенного числа = {summ}");
+    }
+    else System.Console.WriteLine("Введенные символы не образуют число");
+}
+
+SummDigitsInText_2("-123");
